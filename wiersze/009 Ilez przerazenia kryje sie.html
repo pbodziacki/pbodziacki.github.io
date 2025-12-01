@@ -1,0 +1,72 @@
+<html>
+<head>
+<link href="default.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="Author" content="Paweł Bodziacki pawel.bodziacki@gmail.com">
+<meta name="reply-to" content="pawel.bodziacki@gmail.com">
+<meta name="Generator" content="z palca">
+</head>
+<body>
+Ileż przerażenia kryje się<br>
+W jednym pociągu<br>
+Wśród ludzi<br>
+Zrozpaczony kłębek<br>
+Nadziei<br>
+Pragnienia<br>
+<br>
+Ileż przerażenia kryje się<br>
+Na jednym peronie<br>
+Wśród ludzi<br>
+Rodzący się zwiastun<br>
+Uczucia<br>
+Zbyt powolny<br>
+Aby spełnić nadzieję<br>
+<br>
+I kiedy pociąg dojedzie<br>
+Do koszmaru dnia<br>
+Wśród najbliższych<br>
+Tamto uczucie<br>
+Z peronu<br>
+Będzie gryzło i piekło<br>
+<br>
+<p style="margin-left: 30px;"><i>
+widzę Cię wciąż<br>
+gdy tak stoisz<br>
+wychylona<br>
+drżącą twarzą<br>
+niszczysz<br>
+skrawek tej przestrzeni<br>
+który Cię otacza<br>
+gryzie i piecze<br>
+ta tęsknota<br>
+do tamtej chwili<br>
+kiedy chciałem<br>
+wniknąc w Twoją obecność<br>
+w wagonie<br>
+Pragnie powrotu...<br>
+</i></p>
+<p style="text-align: left; margin-top: 2em;">
+  <a href="#" onclick="shareLink()">
+    <img src="../obrazki/share-icon.png" alt="Udostępnij" class="share-icon" alt="Udostępnij"">
+  </a>
+</p>
+
+<script>
+function shareLink() {
+  if (navigator.share) {
+    navigator.share({
+      title: document.title,
+      url: window.location.href
+    }).catch((err) => console.log('Błąd udostępniania:', err));
+  } else {
+    navigator.clipboard.writeText(window.location.href)
+      .then(() => alert('Link skopiowany do schowka!'))
+      .catch(() => alert('Nie udało się skopiować linku'));
+  }
+}
+</script>
+
+
+</body></html>

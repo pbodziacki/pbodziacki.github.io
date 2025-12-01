@@ -1,0 +1,80 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link href="default.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="Author" content="Paweł Bodziacki pawel.bodziacki@gmail.com">
+<meta name="reply-to" content="pawel.bodziacki@gmail.com">
+<meta name="Generator" content="z palca">
+</head>
+<body>
+<b>Śpiący szeryf</b> (piosenka)<br><br><br>
+Hen na prerii<br>
+jest miasteczko<br>
+w którym szeryf<br>
+sobie śpi<br>
+Wszyscy chodzą<br>
+na paluszkach<br>
+bo gdy zbudzą go<br>
+szeryf będzie zły<br>
+<br>
+Więc jest spokój<br>
+w tym miasteczku<br>
+w którym szeryf <br>
+sobie śpi<br>
+Żaden zbójnik<br>
+tam nie drepcze<br>
+bo gdy drepnie -<br>
+szeryf będzie zły<br>
+<br>
+Lecz pewnego<br>
+po-oranka<br>
+zła wiadomość<br>
+przyszła z gór<br>
+Brudny bandzior<br>
+Kid-Koronka<br>
+zaplanował<br>
+wymordować mieszkańców<br>
+<br>
+Więc nasz szeryf<br>
+człek waleczny<br>
+się obudził<br>
+będąc zły<br>
+Dosiadł konia<br>
+spiął ostrogą<br>
+i przepędził brudnego bandziora<br>
+wredne sny<br>
+<br>
+Tak se żyje<br>
+wśród kaktusów<br>
+śpiący szeryf<br>
+jego młódź<br>
+Nawej kolej<br>
+tam nie jeździ<br>
+bo gdy ciuchcia gwizdnie<br>
+szeryf będzie zły<br><br>
+<p style="text-align: left; margin-top: 2em;">
+  <a href="#" onclick="shareLink()">
+    <img src="../obrazki/share-icon.png" alt="Udostępnij" class="share-icon" alt="Udostępnij"">
+  </a>
+</p>
+
+<script>
+function shareLink() {
+  if (navigator.share) {
+    navigator.share({
+      title: document.title,
+      url: window.location.href
+    }).catch((err) => console.log('Błąd udostępniania:', err));
+  } else {
+    navigator.clipboard.writeText(window.location.href)
+      .then(() => alert('Link skopiowany do schowka!'))
+      .catch(() => alert('Nie udało się skopiować linku'));
+  }
+}
+</script>
+
+
+</body>
+</html>

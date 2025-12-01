@@ -1,0 +1,48 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link href="default.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="Author" content="Paweł Bodziacki pawel.bodziacki@gmail.com">
+<meta name="reply-to" content="pawel.bodziacki@gmail.com">
+<meta name="Generator" content="z palca">
+</head>
+<body>
+A kiedy odchodzisz<br>
+pragnę zawinąć przestrzeń<br>
+dookoła włosów rozwianych<br>
+Twojego spojrzenia<br>
+Twego kroku tak szybkiego<br>
+jakbyś utracić miała<br>
+chwilę<br>
+A kiedy odchodzisz<br>
+jak puch osnuty mgłą milczenia<br>
+zstępuje z sufitu<br>
+jesień<br>
+deszczem złotawym<br><br><br>
+<span class="stopka">26.01.1988, 0:20</span>
+<p style="text-align: left; margin-top: 2em;">
+  <a href="#" onclick="shareLink()">
+    <img src="../obrazki/share-icon.png" alt="Udostępnij" class="share-icon" alt="Udostępnij"">
+  </a>
+</p>
+
+<script>
+function shareLink() {
+  if (navigator.share) {
+    navigator.share({
+      title: document.title,
+      url: window.location.href
+    }).catch((err) => console.log('Błąd udostępniania:', err));
+  } else {
+    navigator.clipboard.writeText(window.location.href)
+      .then(() => alert('Link skopiowany do schowka!'))
+      .catch(() => alert('Nie udało się skopiować linku'));
+  }
+}
+</script>
+
+
+</body>
+</html>

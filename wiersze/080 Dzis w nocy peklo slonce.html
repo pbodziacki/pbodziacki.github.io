@@ -1,0 +1,52 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link href="default.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="Author" content="Paweł Bodziacki pawel.bodziacki@gmail.com">
+<meta name="reply-to" content="pawel.bodziacki@gmail.com">
+<meta name="Generator" content="z palca">
+</head>
+<body>
+Dziś w nocy pękło słońce<br>
+Słuchałem jej oddechu<br>
+ukryty w trzcinie<br>
+patrzyłem jak stężone powietrze<br>
+owija jej nos i usta<br>
+niczym całun<br>
+Dziś rano pękło słońce<br>
+Z rozwianymi włosami<br>
+szeptałaś cicho do ucha<br>
+jaskółki<br>
+wykrzywiała łepek, zabawne<br>
+Dziś rano straciłem siebie<br>
+W takt egzekucji niebo śmiało<br>
+i płakały oczy<br>
+zdradzone<br>
+Dziś rano było tak ładnie<br><br><br>
+<span class="stopka">19.12.1989, 12:57</span>
+<p style="text-align: left; margin-top: 2em;">
+  <a href="#" onclick="shareLink()">
+    <img src="../obrazki/share-icon.png" alt="Udostępnij" class="share-icon" alt="Udostępnij"">
+  </a>
+</p>
+
+<script>
+function shareLink() {
+  if (navigator.share) {
+    navigator.share({
+      title: document.title,
+      url: window.location.href
+    }).catch((err) => console.log('Błąd udostępniania:', err));
+  } else {
+    navigator.clipboard.writeText(window.location.href)
+      .then(() => alert('Link skopiowany do schowka!'))
+      .catch(() => alert('Nie udało się skopiować linku'));
+  }
+}
+</script>
+
+
+</body>
+</html>

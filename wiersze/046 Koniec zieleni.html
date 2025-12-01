@@ -1,0 +1,71 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link href="default.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="Author" content="Paweł Bodziacki pawel.bodziacki@gmail.com">
+<meta name="reply-to" content="pawel.bodziacki@gmail.com">
+<meta name="Generator" content="z palca">
+</head>
+<body>
+<p style="margin-left: 30px;">
+Koniec zieleni<br>
+pokazał światu<br>
+czym jest smak wina<br>
+bez Twych ust<br></p>
+<br>
+Stoimy przed sobą<br>
+odziani w zapas słów<br>
+niczym tytani życia<br>
+Oddziela nas wąwóz<br>
+w którym schowaliśmy<br>
+marzenia<br>
+Patrzymy sobie w oczy<br>
+myśląc o różnych sprawach<br>
+Ja chcę coś powiedzieć<br>
+Ty chcesz coś powiedzieć<br>
+My chcemy coś powiedzieć<br>
+Milczymy<br>
+Oddziela nas wąwóz<br>
+wspólnych pragnień<br>
+Rozglądasz się<br>
+szukasz wyjścia<br>
+Znajdujesz<br>
+Odchodzisz<br>
+Tworzysz tęczę<br>
+opasaną w gwiazdach<br>
+Krążą w niej jaskółki<br>
+piszcząc przeraźliwie<br>
+Oschodzisz<br>
+snując za sobą<br>
+mgłę spojrzenia<br>
+błyszczącą piaskiem iskier<br>
+Zostawiasz wąwóz z przepaścią<br>
+w której schowaliśmy<br>
+marzenia<br><br><br>
+<span class="stopka">7.11.1987, 16:37</span>
+<p style="text-align: left; margin-top: 2em;">
+  <a href="#" onclick="shareLink()">
+    <img src="../obrazki/share-icon.png" alt="Udostępnij" class="share-icon" alt="Udostępnij"">
+  </a>
+</p>
+
+<script>
+function shareLink() {
+  if (navigator.share) {
+    navigator.share({
+      title: document.title,
+      url: window.location.href
+    }).catch((err) => console.log('Błąd udostępniania:', err));
+  } else {
+    navigator.clipboard.writeText(window.location.href)
+      .then(() => alert('Link skopiowany do schowka!'))
+      .catch(() => alert('Nie udało się skopiować linku'));
+  }
+}
+</script>
+
+
+</body>
+</html>

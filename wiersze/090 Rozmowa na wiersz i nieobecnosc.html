@@ -1,0 +1,59 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link href="default.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="Author" content="Paweł Bodziacki pawel.bodziacki@gmail.com">
+<meta name="reply-to" content="pawel.bodziacki@gmail.com">
+<meta name="Generator" content="z palca">
+</head>
+<body>
+<b>Rozmowa na wiersz i nieobecność</b><br><br><br>
+rozkazałaś<br>
+więc jestem<br>
+za zasłoną<br>
+kornie oczy spuszczam<br>
+dłoń czy cios?<br>
+<br>
+zapomnij<br>
+<br>
+nie jestem już sobą<br>
+<br>
+mylisz się tak bardzo<br>
+tak bardzo mnie zraniłeś<br>
+nie chcę wiedzieć<br>
+<br>
+rozkazałaś<br>
+więc mnie nie ma<br>
+za zasłoną<br>
+<br>
+a gdy powrócisz<br>
+zasnuty mgłą milczenia<br>
+<br>
+nie jestem znów sobą<br><br><br>
+<span class="stopka">11.11.1992</span>
+<p style="text-align: left; margin-top: 2em;">
+  <a href="#" onclick="shareLink()">
+    <img src="../obrazki/share-icon.png" alt="Udostępnij" class="share-icon" alt="Udostępnij"">
+  </a>
+</p>
+
+<script>
+function shareLink() {
+  if (navigator.share) {
+    navigator.share({
+      title: document.title,
+      url: window.location.href
+    }).catch((err) => console.log('Błąd udostępniania:', err));
+  } else {
+    navigator.clipboard.writeText(window.location.href)
+      .then(() => alert('Link skopiowany do schowka!'))
+      .catch(() => alert('Nie udało się skopiować linku'));
+  }
+}
+</script>
+
+
+</body>
+</html>

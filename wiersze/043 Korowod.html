@@ -1,0 +1,65 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link href="default.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="Author" content="Paweł Bodziacki pawel.bodziacki@gmail.com">
+<meta name="reply-to" content="pawel.bodziacki@gmail.com">
+<meta name="Generator" content="z palca">
+</head>
+<body>
+Gwarny korowód białych postaci, drżący w ułudnym szczęściu, bez szczęścia.<br>
+Puste uśmiechy obłędnych oczu, wyraźnych w blasku podcienionych spojrzeń.<br>
+<br>
+Tego wszystkiego dobrobyt pełny który dobija myśl zwrotną, plącze<br>
+Tego wszystkiego dobrobyt celny który otacza umysł i kończy<br>
+<br>
+<p style="margin-left: 30px;">
+Gdy przyjdą<br>
+stanę prosto przed nimi<br>
+Wiatr włosy moje rozwieje<br>
+Spojrzę spojrzeniem dzikiej bestyi<br>
+i równie dziko zaśmieję<br>
+<br>
+Nie będą patrzeć na moje dłonie<br>
+pragnąc dotyku ciepłego<br>
+Będą podziwiać drzew ostrych słoje<br>
+gdy wbijać je będę w każdego<br>
+<br>
+I wreszcie zniknie ostatnia postać<br>
+snu mego co jak źrenica<br>
+przybiera myśli w przedziwne kształty<br>
+Zaś me uczucia - w oblicza<br>
+<br>
+Więc będę stał tak pośród zgliszczy<br>
+mych powalonych pragnień<br>
+I będę widział jej oczy, usta<br>
+ukryte gdzieś w duszy<br>
+na dnie<br>
+</p>
+<br><br><span class="stopka">1.11.1987, 23:31</span>
+<p style="text-align: left; margin-top: 2em;">
+  <a href="#" onclick="shareLink()">
+    <img src="../obrazki/share-icon.png" alt="Udostępnij" class="share-icon" alt="Udostępnij"">
+  </a>
+</p>
+
+<script>
+function shareLink() {
+  if (navigator.share) {
+    navigator.share({
+      title: document.title,
+      url: window.location.href
+    }).catch((err) => console.log('Błąd udostępniania:', err));
+  } else {
+    navigator.clipboard.writeText(window.location.href)
+      .then(() => alert('Link skopiowany do schowka!'))
+      .catch(() => alert('Nie udało się skopiować linku'));
+  }
+}
+</script>
+
+
+</body>
+</html>

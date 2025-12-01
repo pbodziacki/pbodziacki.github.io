@@ -1,0 +1,67 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link href="default.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="Author" content="Paweł Bodziacki pawel.bodziacki@gmail.com">
+<meta name="reply-to" content="pawel.bodziacki@gmail.com">
+<meta name="Generator" content="z palca">
+</head>
+<body>
+Panowie w płaszczach<br>
+snują się po deszczu<br>
+zmokniętych uczuć<br>
+na smutnych ulicach<br>
+<br>
+Mijają witryny<br>
+pełne wiejskich wianków<br>
+starych win i kwiatów<br>
+wonnych pocałunków<br>
+<br>
+Panowie w płaszczach<br>
+patrzą na słońce<br>
+uchylając z pokorą<br>
+ronda kapeluszy<br>
+<br>
+Z ciemnego zaułka<br>
+wygląda twarz szczura<br>
+Ruchome wąsiska<br>
+wietrzą rychłą zdobycz<br>
+<br>
+Pan w płaszczu podnosi kamień<br>
+rzuca go w słońce<br>
+Szczur pędzi przed siebie<br>
+Pan w płaszczu podnosi kamień<br>
+rzuca go w słońce<br>
+Szczur przegryza tchawicę<br>
+<br>
+Panowie w płaszczach<br>
+patrzą na słońce<br>
+uchylając z pokorą<br>
+ronda kapeluszy...<br><br><br>
+<span class="stopka">15.10.1987, 10:27</span>
+<p style="text-align: left; margin-top: 2em;">
+  <a href="#" onclick="shareLink()">
+    <img src="../obrazki/share-icon.png" alt="Udostępnij" class="share-icon" alt="Udostępnij"">
+  </a>
+</p>
+
+<script>
+function shareLink() {
+  if (navigator.share) {
+    navigator.share({
+      title: document.title,
+      url: window.location.href
+    }).catch((err) => console.log('Błąd udostępniania:', err));
+  } else {
+    navigator.clipboard.writeText(window.location.href)
+      .then(() => alert('Link skopiowany do schowka!'))
+      .catch(() => alert('Nie udało się skopiować linku'));
+  }
+}
+</script>
+
+
+</body>
+</html>

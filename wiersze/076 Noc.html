@@ -1,0 +1,53 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link href="default.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="Author" content="Paweł Bodziacki pawel.bodziacki@gmail.com">
+<meta name="reply-to" content="pawel.bodziacki@gmail.com">
+<meta name="Generator" content="z palca">
+</head>
+<body>
+<b>Noc</b><br><br><br>
+Nie lubię poranków<br>
+kiedy słowiki wstają<br>
+gdy nowy tłum ludzie<br>
+znów biegną przed siebie<br>
+<br>
+Gdy zamęt ucichnie<br>
+wciąż umiera jaskółka<br>
+rozchylasz pukle włosów<br>
+i powietrze tężeje<br>
+spojrzeniem<br>
+<br>
+Pocałuj ten księżyc<br>
+niech świeci wytrwale<br>
+bo noc mnie zatrzyma<br>
+dla ciebie<br>
+nad ranem<br><br><br>
+<span class="stopka">5.06.1989, 7:50</span>
+<p style="text-align: left; margin-top: 2em;">
+  <a href="#" onclick="shareLink()">
+    <img src="../obrazki/share-icon.png" alt="Udostępnij" class="share-icon" alt="Udostępnij"">
+  </a>
+</p>
+
+<script>
+function shareLink() {
+  if (navigator.share) {
+    navigator.share({
+      title: document.title,
+      url: window.location.href
+    }).catch((err) => console.log('Błąd udostępniania:', err));
+  } else {
+    navigator.clipboard.writeText(window.location.href)
+      .then(() => alert('Link skopiowany do schowka!'))
+      .catch(() => alert('Nie udało się skopiować linku'));
+  }
+}
+</script>
+
+
+</body>
+</html>

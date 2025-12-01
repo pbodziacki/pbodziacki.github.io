@@ -1,0 +1,77 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link href="default.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="Author" content="Paweł Bodziacki pawel.bodziacki@gmail.com">
+<meta name="reply-to" content="pawel.bodziacki@gmail.com">
+<meta name="Generator" content="z palca">
+</head>
+<body>
+Horyzont biegnie<br>
+mija nieznane trawy<br>
+dochodząc do nieskończoności<br>
+<br>
+<p style="margin-left: 30px;">
+Zraniony sokół spada<br>
+w przestworza<br>
+Podaj mu rękę<br>
+sokolico śniada<br>
+niech razem z Tobą<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;razem z Tobą...<br>
+</p>
+<br>
+Z rozwianym włosem<br>
+z błękitnym okiem<br>
+szła -<br>
+niczyja dziewczyna<br>
+i...<br>
+spotkała księcia<br>
+co z bajki przyszedł<br>
+wziął ją w ramiona<br>
+porwał i uniósł -<br>
+swoją dziewczynę<br>
+Pobiegli razem<br>
+w sen o miłości<br>
+gubiąc w przeszłości<br>
+stare wspomnienia<br>
+Biegnąc przed siebie<br>
+widzieli słońce<br>
+a on ją objął -<br>
+swoją dziewczynę<br>
+Tak stali razem<br>
+na skraju drogi<br>
+pnącej się ostro<br>
+pod niebo gwiazd<br>
+a on ją tuli -<br>
+swoją dziewczynę<br>
+I stali razem<br>
+słońca nie widząc<br>
+tylko swe oczy<br>
+błyszczące śmiercią<br><br><br>
+<span class="stopka">5.10.1988</span>
+<p style="text-align: left; margin-top: 2em;">
+  <a href="#" onclick="shareLink()">
+    <img src="../obrazki/share-icon.png" alt="Udostępnij" class="share-icon" alt="Udostępnij"">
+  </a>
+</p>
+
+<script>
+function shareLink() {
+  if (navigator.share) {
+    navigator.share({
+      title: document.title,
+      url: window.location.href
+    }).catch((err) => console.log('Błąd udostępniania:', err));
+  } else {
+    navigator.clipboard.writeText(window.location.href)
+      .then(() => alert('Link skopiowany do schowka!'))
+      .catch(() => alert('Nie udało się skopiować linku'));
+  }
+}
+</script>
+
+
+</body>
+</html>

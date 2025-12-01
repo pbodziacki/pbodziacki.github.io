@@ -1,0 +1,64 @@
+<html>
+<head>
+<link href="default.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="Author" content="Paweł Bodziacki pawel.bodziacki@gmail.com">
+<meta name="reply-to" content="pawel.bodziacki@gmail.com">
+<meta name="Generator" content="z palca">
+</head>
+<body>
+<b>Tren</b><br><br><br>
+Gwiazda znikła<br>
+<br>
+Tamten moment<br>
+gdy Ciebie spostrzegłem<br>
+gdy Tobie wyznałem<br>
+i gdy zapytałem<br>
+<br>
+głębia ostrości<br>
+zdjęcie<br>
+wspomnienie<br>
+<br>
+Ty też ją kochałeś<br>
+No! rzuć kamieniem!<br>
+<br>
+Nic nie wypełnia zranionej przestrzeni<br>
+Zranionej pustką żałobną<br>
+po Tobie<br>
+<br>
+A tu<br>
+słowiki i wiosna<br>
+na Ziemi<br>
+<br>
+Gwiazda<br>
+&nbsp;umarła<br>
+<br>
+-<br>
+<br>
+gwiazda...<br>
+&nbsp;Słońce<br><br>
+<p style="text-align: left; margin-top: 2em;">
+  <a href="#" onclick="shareLink()">
+    <img src="../obrazki/share-icon.png" alt="Udostępnij" class="share-icon" alt="Udostępnij"">
+  </a>
+</p>
+
+<script>
+function shareLink() {
+  if (navigator.share) {
+    navigator.share({
+      title: document.title,
+      url: window.location.href
+    }).catch((err) => console.log('Błąd udostępniania:', err));
+  } else {
+    navigator.clipboard.writeText(window.location.href)
+      .then(() => alert('Link skopiowany do schowka!'))
+      .catch(() => alert('Nie udało się skopiować linku'));
+  }
+}
+</script>
+
+
+</body></html>

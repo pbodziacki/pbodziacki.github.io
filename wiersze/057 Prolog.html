@@ -1,0 +1,51 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link href="default.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="Author" content="Paweł Bodziacki pawel.bodziacki@gmail.com">
+<meta name="reply-to" content="pawel.bodziacki@gmail.com">
+<meta name="Generator" content="z palca">
+</head>
+<body>
+<b>Prolog&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(E***)</b><br><br><br>
+Wiesz do czego zmierzam<br>
+patrząc w Twoje milczenie?<br>
+<br>
+Zdobyć łyk herbaty<br>
+w Twojej szklance nie dopity<br>
+Dotknąć powietrza<br>
+którym mnie dostrzegłaś<br>
+Usłuchać plaśnięć prochu<br>
+szarego jak list<br>
+<br>
+I czegoś jeszcze<br>
+czegoś ważnego<br>
+niczym drgnięcie ważki na jeziorze:<br>
+milczeć<br><br><br>
+<span class="stopka">17.01.1988, 2:14</span>
+<p style="text-align: left; margin-top: 2em;">
+  <a href="#" onclick="shareLink()">
+    <img src="../obrazki/share-icon.png" alt="Udostępnij" class="share-icon" alt="Udostępnij"">
+  </a>
+</p>
+
+<script>
+function shareLink() {
+  if (navigator.share) {
+    navigator.share({
+      title: document.title,
+      url: window.location.href
+    }).catch((err) => console.log('Błąd udostępniania:', err));
+  } else {
+    navigator.clipboard.writeText(window.location.href)
+      .then(() => alert('Link skopiowany do schowka!'))
+      .catch(() => alert('Nie udało się skopiować linku'));
+  }
+}
+</script>
+
+
+</body>
+</html>

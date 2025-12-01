@@ -1,0 +1,63 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link href="default.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="Author" content="Paweł Bodziacki pawel.bodziacki@gmail.com">
+<meta name="reply-to" content="pawel.bodziacki@gmail.com">
+<meta name="Generator" content="z palca">
+</head>
+<body>
+Właśnie przyszedłem, do świata jak kwiat, aby pękać codziennie od jego zapachu.<br>
+Właśnie stanąłem nad brzegiem tej rzeki, nisącej ryby i śmiecie. Aby przywyknąć.<br>
+<br>
+<p style="margin-left: 30px;">
+Właśnie przywykłem<br>
+do strachu przed sobą<br>
+Właśnie przywykłem<br>
+do blasku nad Tobą<br>
+Właśnie przywykłem<br>
+do tego drżenia dłoni<br>
+Właśnie przywykłem<br>
+i czekam<br>
+może myśl się odkłoni<br>
+Żeby odwrócić głowę od słońca<br>
+Żeby wciąż patrzeć w Twe oczy<br>
+bez końca.<br>
+Wciąż taki twardy -<br>
+jak ciasto zakalca.<br>
+Wciąż taki zimny -<br>
+wzrok zmarłego starca.<br>
+Wciąż czekający<br>
+na coś co nie przyjdzie<br>
+...<br>
+</p>
+<br>
+Znowu widzę schodzący ze ściany krzyk. Spełza po farbie w dół, rozpełza się i wnika w kaloryfer.<br>
+Czy stąd to buczenie w rurach?<br><br><br>
+<span class="stopka">29.01.1989</span>
+<p style="text-align: left; margin-top: 2em;">
+  <a href="#" onclick="shareLink()">
+    <img src="../obrazki/share-icon.png" alt="Udostępnij" class="share-icon" alt="Udostępnij"">
+  </a>
+</p>
+
+<script>
+function shareLink() {
+  if (navigator.share) {
+    navigator.share({
+      title: document.title,
+      url: window.location.href
+    }).catch((err) => console.log('Błąd udostępniania:', err));
+  } else {
+    navigator.clipboard.writeText(window.location.href)
+      .then(() => alert('Link skopiowany do schowka!'))
+      .catch(() => alert('Nie udało się skopiować linku'));
+  }
+}
+</script>
+
+
+</body>
+</html>

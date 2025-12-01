@@ -1,0 +1,62 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link href="default.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="Author" content="Paweł Bodziacki pawel.bodziacki@gmail.com">
+<meta name="reply-to" content="pawel.bodziacki@gmail.com">
+<meta name="Generator" content="z palca">
+</head>
+<body>
+<b>Wiersz</b><br><br><br>
+Tak jak nigdy wcześniej i potem<br>
+spotkamy się na tamtym brzegu<br>
+i otworzymy oczy<br>
+<br>
+czy widzisz te góry<br>
+kochana<br>
+czy widzisz<br>
+wejdziemy tam, na ten kamień<br>
+pomarzyć<br>
+razem z wiatrem rozwinąć<br>
+nasze skrzydła<br>
+własne skrzydła<br>
+<br>
+A wokół ciemność<br>
+i cisza<br>
+chłód we włosach<br>
+w mojej dłoni<br>
+w Twojej dłoni chłód<br>
+<br>
+powietrze przenika nas<br>
+poruszane łagodnie liście<br>
+opadają nam pod nogi<br>
+z rozmarzonymi uśmiechami<br>
+"witajcie, witajcie wam<br>
+o, bogowie naszych myśli"<br><br><br>
+<span class="stopka">4.09.1992, 23:20</span>
+<p style="text-align: left; margin-top: 2em;">
+  <a href="#" onclick="shareLink()">
+    <img src="../obrazki/share-icon.png" alt="Udostępnij" class="share-icon" alt="Udostępnij"">
+  </a>
+</p>
+
+<script>
+function shareLink() {
+  if (navigator.share) {
+    navigator.share({
+      title: document.title,
+      url: window.location.href
+    }).catch((err) => console.log('Błąd udostępniania:', err));
+  } else {
+    navigator.clipboard.writeText(window.location.href)
+      .then(() => alert('Link skopiowany do schowka!'))
+      .catch(() => alert('Nie udało się skopiować linku'));
+  }
+}
+</script>
+
+
+</body>
+</html>

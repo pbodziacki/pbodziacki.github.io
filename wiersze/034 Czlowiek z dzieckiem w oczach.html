@@ -1,0 +1,56 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link href="default.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="Author" content="Paweł Bodziacki pawel.bodziacki@gmail.com">
+<meta name="reply-to" content="pawel.bodziacki@gmail.com">
+<meta name="Generator" content="z palca">
+</head>
+<body>
+<b>Człowiek z dzieckiem w oczach</b><br><br><br>
+Widziałaś go<br>
+człowieka z dzieckiem w oczach<br>
+Uśmiechnął się<br>
+Ty też<br>
+poznałaś w nim przyszłość<br>
+I choć odwróciłaś się od niej<br>
+pozostało<br>
+to dziecko w tych oczach<br>
+w spojrzeniu<br>
+pełnym tęsknoty<br>
+I choć odwróciłaś się<br>
+pozostał<br>
+ten sam<br>
+niezmienny<br>
+choć może inny<br>
+już nie z dzieckiem<br>
+w oczach<br>
+Ze smutkiem<br><br><br>
+<span class="stopka">8.08.1987, 18:00</span>
+<p style="text-align: left; margin-top: 2em;">
+  <a href="#" onclick="shareLink()">
+    <img src="../obrazki/share-icon.png" alt="Udostępnij" class="share-icon" alt="Udostępnij"">
+  </a>
+</p>
+
+<script>
+function shareLink() {
+  if (navigator.share) {
+    navigator.share({
+      title: document.title,
+      url: window.location.href
+    }).catch((err) => console.log('Błąd udostępniania:', err));
+  } else {
+    navigator.clipboard.writeText(window.location.href)
+      .then(() => alert('Link skopiowany do schowka!'))
+      .catch(() => alert('Nie udało się skopiować linku'));
+  }
+}
+</script>
+
+
+</body>
+</html>

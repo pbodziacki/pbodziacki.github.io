@@ -1,0 +1,67 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link href="default.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="Author" content="Paweł Bodziacki pawel.bodziacki@gmail.com">
+<meta name="reply-to" content="pawel.bodziacki@gmail.com">
+<meta name="Generator" content="z palca">
+</head>
+<body>
+rozmawiają dwie staruszki<br>
+pod drzewem<br>
+złamać drżącą rękę<br>
+to twe spojrzenie tam (!)<br>
+gdzieś w cieniu<br>
+zasłona z mgły zimnej<br>
+starzec otwiera usta<br>
+zgrabiała dłoń drapie piasek<br>
+rzeka płynie spokojnie<br>
+brzuch ryby<br>
+człowiek dowiaduje się o śmierci matki<br>
+<br>
+I znowu pejzaż bez twej dłoni<br>
+przekłamał duszę i sumienie<br>
+I serce pędzi by w agonii<br>
+odnaleźć swoje ukojenie<br>
+<br>
+Znów jesteś we śnie supernową<br>
+rozmytą przez płaszczyzny Słońca<br>
+gdy szukam ciebie gdzieś przed sobą<br>
+złych nocy ciągle nie ma końca<br>
+<br>
+Jak łza pęknięta w niemym krzyku<br>
+rozpryśniętego światła zjawa<br>
+znów pojawiłaś się w mym oku<br>
+Wzeszłej jutrzenki plama krwawa<br>
+<br>
+Lecz gdy cię widzę, hen przed sobą<br>
+twe piersi - kwiaty nagich nocy<br>
+me dłonie dotknąć wciąż nie mogą<br>
+twych włosów, drżące w swej niemocy<br><br><br>
+<span class="stopka">27.06.1989, 1:00</span>
+<p style="text-align: left; margin-top: 2em;">
+  <a href="#" onclick="shareLink()">
+    <img src="../obrazki/share-icon.png" alt="Udostępnij" class="share-icon" alt="Udostępnij"">
+  </a>
+</p>
+
+<script>
+function shareLink() {
+  if (navigator.share) {
+    navigator.share({
+      title: document.title,
+      url: window.location.href
+    }).catch((err) => console.log('Błąd udostępniania:', err));
+  } else {
+    navigator.clipboard.writeText(window.location.href)
+      .then(() => alert('Link skopiowany do schowka!'))
+      .catch(() => alert('Nie udało się skopiować linku'));
+  }
+}
+</script>
+
+
+</body>
+</html>

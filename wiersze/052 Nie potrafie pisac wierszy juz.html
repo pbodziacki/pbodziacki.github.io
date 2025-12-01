@@ -1,0 +1,61 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link href="default.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="Author" content="Paweł Bodziacki pawel.bodziacki@gmail.com">
+<meta name="reply-to" content="pawel.bodziacki@gmail.com">
+<meta name="Generator" content="z palca">
+</head>
+<body>
+Nie potrafię pisać wierszy już<br>
+dla mnie<br>
+dla Ciebie<br>
+dla nas<br>
+Wody w szklankach zabrakło<br>
+Liście z gałęzi opadły<br>
+Powiew wiatru niedaleko<br>
+aby zabrać coś<br>
+co nas łączy w nienawiści<br>
+w obojętności<br>
+w miłości<br>
+Nie potrafię już pisać<br>
+o mnie<br>
+o Tobie<br>
+o nas<br>
+wzdychać do odległego spojrzenia<br>
+Skończył się blask słońca<br>
+zasłonięty skrzydłami ćmy<br>
+I choć dalej noc przerywa<br>
+błysk smutnych oczu<br>
+skórę drażni skurcz serca<br>
+pamięc się broni<br>
+aby nie zabłądzić<br>
+w słowikach śpiewu wieczornego<br>
+ukrytego w rosie porannych wierszy<br><br><br>
+<span class="stopka">21,22.12.1987</span>
+<p style="text-align: left; margin-top: 2em;">
+  <a href="#" onclick="shareLink()">
+    <img src="../obrazki/share-icon.png" alt="Udostępnij" class="share-icon" alt="Udostępnij"">
+  </a>
+</p>
+
+<script>
+function shareLink() {
+  if (navigator.share) {
+    navigator.share({
+      title: document.title,
+      url: window.location.href
+    }).catch((err) => console.log('Błąd udostępniania:', err));
+  } else {
+    navigator.clipboard.writeText(window.location.href)
+      .then(() => alert('Link skopiowany do schowka!'))
+      .catch(() => alert('Nie udało się skopiować linku'));
+  }
+}
+</script>
+
+
+</body>
+</html>

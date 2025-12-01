@@ -1,0 +1,56 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link href="default.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="Author" content="Paweł Bodziacki pawel.bodziacki@gmail.com">
+<meta name="reply-to" content="pawel.bodziacki@gmail.com">
+<meta name="Generator" content="z palca">
+</head>
+<body>
+Kominy fabryk już są puste<br>
+zmrok szybko zapadł rozgwieżdżony<br>
+A człowiek czeka, kryjąc w ustach<br>
+rozpaczy grymas rozbudzony<br>
+<br>
+I choć gęstnieje noc za oknem<br>
+choć hymn głośnika radio wzrusza<br>
+wciąż nie śpi ten co upadł wzlotem<br>
+z jednostajnością krzyczy cisza<br>
+<br>
+Lecz przecież noc się kończy dniem<br>
+skowronkiem lotem zamigoczą<br>
+i płacz ukoi cisz snem<br>
+Lecz rany dalej bólem broczą<br>
+<br>
+Wybije zegar jedenastą<br>
+rozsypie garść złotego kamienia<br>
+Już śpi, oddycha. Wreszcie zasnął<br>
+pieszcząc w swych dłoniach wspomnień<br>
+wspomnienia<br><br><br>
+<span class="stopka">3.12.1987, 0:34</span>
+<p style="text-align: left; margin-top: 2em;">
+  <a href="#" onclick="shareLink()">
+    <img src="../obrazki/share-icon.png" alt="Udostępnij" class="share-icon" alt="Udostępnij"">
+  </a>
+</p>
+
+<script>
+function shareLink() {
+  if (navigator.share) {
+    navigator.share({
+      title: document.title,
+      url: window.location.href
+    }).catch((err) => console.log('Błąd udostępniania:', err));
+  } else {
+    navigator.clipboard.writeText(window.location.href)
+      .then(() => alert('Link skopiowany do schowka!'))
+      .catch(() => alert('Nie udało się skopiować linku'));
+  }
+}
+</script>
+
+
+</body>
+</html>

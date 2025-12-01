@@ -1,0 +1,81 @@
+<html>
+<head>
+<link href="default.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="Author" content="Paweł Bodziacki pawel.bodziacki@gmail.com">
+<meta name="reply-to" content="pawel.bodziacki@gmail.com">
+<meta name="Generator" content="z palca">
+</head>
+<body>
+Z rozwianym włosem<br>
+z błękitnym okiem<br>
+szła -<br>
+niczyja dziewczyna<br>
+aleją parku<br>
+mleczną drogą -<br>
+niczyja dziewczyna<br>
+Wśród wirów życia<br>
+liści jesieni<br>
+zrywała kwiaty<br>
+tuląc w nie usta<br>
+i białym ząbkiem<br>
+gryzła tęsknoty -<br>
+niczyja dziewczyna<br>
+Nie znała drogi<br>
+i nic nie rzekła<br>
+mimo to przyszła -<br>
+czyjaś dziewczyna<br><br>
+Wpadła na zakręt<br>
+przeszła wirażem<br>
+prując przed siebie<br>
+wprost w otchłań marzeń -<br>
+czyjaś dziewczyna<br>
+Weszła do morza<br>
+to - cudnie ciepłe -<br>
+oplotło wargi jej<br>
+pianą spojrzeń<br>
+w zieleni całych -<br>
+czyjaś dziewczyna<br>
+Weszła w to morze<br>
+choć nic nie rzekła<br>
+z zamkniętym okiem<br>
+w sen o miłości<br>
+czyjaś dziewczyna<br>
+i...<br><br>
+spotkała księcia<br>
+co z bajki przyszedł<br>
+wziął ją w ramiona<br>
+porwał i uniósł -<br>
+swoją dziewczynę<br>
+A morze samo<br>
+błądząc - zostało<br>
+pianę wzbijając<br>
+na obłej skale<br>
+Było szczęśliwe<br>
+bo wreszcie była -<br>
+czyjąś dziewczyną<br><br>
+<p style="text-align: left; margin-top: 2em;">
+  <a href="#" onclick="shareLink()">
+    <img src="../obrazki/share-icon.png" alt="Udostępnij" class="share-icon" alt="Udostępnij"">
+  </a>
+</p>
+
+<script>
+function shareLink() {
+  if (navigator.share) {
+    navigator.share({
+      title: document.title,
+      url: window.location.href
+    }).catch((err) => console.log('Błąd udostępniania:', err));
+  } else {
+    navigator.clipboard.writeText(window.location.href)
+      .then(() => alert('Link skopiowany do schowka!'))
+      .catch(() => alert('Nie udało się skopiować linku'));
+  }
+}
+</script>
+
+
+</body></html>

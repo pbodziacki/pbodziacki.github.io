@@ -1,0 +1,59 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link href="default.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="Author" content="Paweł Bodziacki pawel.bodziacki@gmail.com">
+<meta name="reply-to" content="pawel.bodziacki@gmail.com">
+<meta name="Generator" content="z palca">
+</head>
+<body>
+Ludzie sobie chodzą<br>
+pląsając między falami<br>
+Nie wiedzą<br>
+co kryją ich twarze<br>
+jak wielkie odstępstwa<br>
+od normy<br>
+są ich udziałem<br>
+Jak mechaniczne dusze<br>
+wykupują co dnia<br>
+każdej nocy<br>
+za bezcen licytacji u Żyda<br>
+przepustki do szczęścia<br>
+na jutro<br>
+By pewnej nocy<br>
+nad ranem<br>
+obudzić się z krzykiem<br>
+jak pękające lustro ich krwawych ust<br>
+Odkrywają w sobie moc<br>
+i wychodzą na świat<br>
+aby znów pląsać między falami<br>
+i ukrywać w swych twarzach<br>
+jak wielkie odstępstwa od normy<br>
+są ich udziałem<br><br><br>
+<span class="stopka">31.05.1989, 13:50</span>
+<p style="text-align: left; margin-top: 2em;">
+  <a href="#" onclick="shareLink()">
+    <img src="../obrazki/share-icon.png" alt="Udostępnij" class="share-icon" alt="Udostępnij"">
+  </a>
+</p>
+
+<script>
+function shareLink() {
+  if (navigator.share) {
+    navigator.share({
+      title: document.title,
+      url: window.location.href
+    }).catch((err) => console.log('Błąd udostępniania:', err));
+  } else {
+    navigator.clipboard.writeText(window.location.href)
+      .then(() => alert('Link skopiowany do schowka!'))
+      .catch(() => alert('Nie udało się skopiować linku'));
+  }
+}
+</script>
+
+
+</body>
+</html>

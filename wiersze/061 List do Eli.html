@@ -1,0 +1,69 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link href="default.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="Author" content="Paweł Bodziacki pawel.bodziacki@gmail.com">
+<meta name="reply-to" content="pawel.bodziacki@gmail.com">
+<meta name="Generator" content="z palca">
+</head>
+<body>
+<b>List do Eli (prozą)</b><br><br><br>
+Piszę do Ciebie<br>
+gdyż noc już jest ciemna<br>
+gdyż brak mi twych włosów<br>
+błyszczących gdzieś w mroku<br>
+<br>
+Pełno-m dziś minut poświęcił<br>
+myśleniu<br>
+co by to było gdybyś Ty tak przyszła<br>
+<br>
+Znowu usiedlibyśmy naprzeciwko siebie<br>
+jak dwa hetmany z drewna wyciosane<br>
+sprawujące włądzę na pól szachownicy<br>
+Tak wiele słów by było<br>
+a jeszcze więcej milczenia<br>
+o sobie<br>
+<br>
+I znowu byś zniknęła<br>
+jak zjawa utęskniona<br>
+której przejaw mglisty tak raduje oczy<br>
+a której brak przywodzi bezsensowne myśli<br>
+<br>
+Więc znów piszę do Ciebie słowa<br>
+pragnąc uczucia przelać w nie wszyściutkie<br>
+<br>
+I wiem, że choć one ulecą z powietrzem<br>
+stukając do okna przy którym się zamyślasz<br>
+Ty nie usłyszysz ich milczenia głosu<br>
+gdyż śpisz już snem tajemnym<br>
+w westchnieniu zaklętym<br>
+spokojnym jak woda co z jeziora patrzy<br>
+gdy wiatr cicho zaczyna<br>
+poobiednią sjestę<br><br><br>
+<span class="stopka">27.01.1988, 2:46</span>
+<p style="text-align: left; margin-top: 2em;">
+  <a href="#" onclick="shareLink()">
+    <img src="../obrazki/share-icon.png" alt="Udostępnij" class="share-icon" alt="Udostępnij"">
+  </a>
+</p>
+
+<script>
+function shareLink() {
+  if (navigator.share) {
+    navigator.share({
+      title: document.title,
+      url: window.location.href
+    }).catch((err) => console.log('Błąd udostępniania:', err));
+  } else {
+    navigator.clipboard.writeText(window.location.href)
+      .then(() => alert('Link skopiowany do schowka!'))
+      .catch(() => alert('Nie udało się skopiować linku'));
+  }
+}
+</script>
+
+
+</body>
+</html>

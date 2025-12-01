@@ -1,0 +1,57 @@
+<html>
+<head>
+<link href="default.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="Author" content="Paweł Bodziacki pawel.bodziacki@gmail.com">
+<meta name="reply-to" content="pawel.bodziacki@gmail.com">
+<meta name="Generator" content="z palca">
+</head>
+<body>
+<b>Tak bardzo</b><br><br><br>
+Tak chciałbym z Tobą<br>
+pomilczeć choć chwilę<br>
+wzywając ptaka<br>
+by zagrzmiał tenorem<br>
+Tak chciałbym z Tobą<br>
+spędzić ten czas mile<br>
+a tymczasem odwet losu biorę<br>
+Ginąc sam w pustelni<br>
+tonąc bez westchnienia<br>
+walcząc z samym sobą<br>
+w niczyim imieniu<br>
+schodząc po pas w zgliszcza<br>
+powalonych pragnień<br>
+Tak bardzo chciałbym<br>
+och jak bardzo<br>
+z wiatrem popłynąc w zawody<br>
+mimo burz nieprzerwanych<br>
+mimo niepogody<br>
+wciąż tak bardzo<br>
+choć czasu już nie staje<br>
+abyśmy razem zwiedzili<br>
+uczuć obce kraje<br><br>
+<p style="text-align: left; margin-top: 2em;">
+  <a href="#" onclick="shareLink()">
+    <img src="../obrazki/share-icon.png" alt="Udostępnij" class="share-icon" alt="Udostępnij"">
+  </a>
+</p>
+
+<script>
+function shareLink() {
+  if (navigator.share) {
+    navigator.share({
+      title: document.title,
+      url: window.location.href
+    }).catch((err) => console.log('Błąd udostępniania:', err));
+  } else {
+    navigator.clipboard.writeText(window.location.href)
+      .then(() => alert('Link skopiowany do schowka!'))
+      .catch(() => alert('Nie udało się skopiować linku'));
+  }
+}
+</script>
+
+
+</body></html>

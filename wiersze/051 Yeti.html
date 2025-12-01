@@ -1,0 +1,87 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link href="default.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="Author" content="Paweł Bodziacki pawel.bodziacki@gmail.com">
+<meta name="reply-to" content="pawel.bodziacki@gmail.com">
+<meta name="Generator" content="z palca">
+</head>
+<body>
+<b>Yeti</b><br><br>
+<p style="margin-left: 30px;">
+Yeti<br>
+szukasz nowych lądów<br>
+Yeti<br>
+szukasz innych gór<br></p>
+<br>
+Stoisz na śniegu<br>
+skrzącym czasem Himalajów<br>
+Patrzysz w górę<br>
+na chury, gwiazdy<br>
+<p style="margin-left: 30px;">
+Yeti<br>
+szukasz nowych lądów<br>
+Yeti<br>
+szukasz innych gór<br></p>
+<br>
+Zagubione oczy<br>
+smutne oczy<br>
+obejmują ciepłem szczyty<br>
+pamiętające ślady stóp<br>
+<p style="margin-left: 30px;">
+Yeti<br>
+szukasz nowych lądów<br>
+Yeti<br>
+szukasz innych gór<br></p>
+<br>
+Stoisz bezradnie<br>
+z rękami obwisłymi<br>
+jak gałęzie ścięte wiatrem<br>
+Wdychasz ostatki<br>
+t w o j e g o  powietrza<br>
+t w o i c h  gór<br>
+<p style="margin-left: 30px;">
+Yeti<br>
+szukasz nowych lądów<br>
+Yeti<br>
+szukasz innych gór<br></p>
+<br>
+W odstających uszach<br>
+śpiewa powiew mrozu<br>
+jakże znajomy<br>
+W skłębionej sierści<br>
+czai się strach<br>
+<p style="margin-left: 30px;">
+Yeti<br>
+szukasz nowych lądów<br>
+Yeti<br>
+szukasz innych gór<br></p>
+<br>
+Przybył człowiek...<br><br><br>
+<span class="stopka">9.12.1987, 2:20</span>
+<p style="text-align: left; margin-top: 2em;">
+  <a href="#" onclick="shareLink()">
+    <img src="../obrazki/share-icon.png" alt="Udostępnij" class="share-icon" alt="Udostępnij"">
+  </a>
+</p>
+
+<script>
+function shareLink() {
+  if (navigator.share) {
+    navigator.share({
+      title: document.title,
+      url: window.location.href
+    }).catch((err) => console.log('Błąd udostępniania:', err));
+  } else {
+    navigator.clipboard.writeText(window.location.href)
+      .then(() => alert('Link skopiowany do schowka!'))
+      .catch(() => alert('Nie udało się skopiować linku'));
+  }
+}
+</script>
+
+
+</body>
+</html>

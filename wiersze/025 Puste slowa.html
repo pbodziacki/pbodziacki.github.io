@@ -1,0 +1,58 @@
+<html>
+<head>
+<link href="default.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="Author" content="Paweł Bodziacki pawel.bodziacki@gmail.com">
+<meta name="reply-to" content="pawel.bodziacki@gmail.com">
+<meta name="Generator" content="z palca">
+</head>
+<body>
+Puste słowa<br>
+puste myśli<br>
+ciszą pęknięte<br>
+żeby nie zapeszyć<br>
+pełno skojarzeń<br>
+jak wspomnienie<br>
+w szalonym umyśle<br>
+oko rozbiegane<br>
+szuka wciąż (tej jednej)<br>
+już nie szuka<br>
+zmęczone<br>
+(pióro daje przekaz prosty)<br>
+choć pragnie<br>
+to oko<br>
+lecz nie może okiełznać<br>
+tej duszy<br>
+która jak okręt<br>
+płynie wskroś żywota.<br>
+Taka jest prawda oszalonym umyśle.<br>
+<br>
+<i>Kto nie kocha, niech nie żyje.<br>
+Niech zginie, kto nie zna kochania.<br>
+Dwa razy niech zginie, kto kochać zabrania.</i><br>
+Lecz cyt.<br><br>
+<p style="text-align: left; margin-top: 2em;">
+  <a href="#" onclick="shareLink()">
+    <img src="../obrazki/share-icon.png" alt="Udostępnij" class="share-icon" alt="Udostępnij"">
+  </a>
+</p>
+
+<script>
+function shareLink() {
+  if (navigator.share) {
+    navigator.share({
+      title: document.title,
+      url: window.location.href
+    }).catch((err) => console.log('Błąd udostępniania:', err));
+  } else {
+    navigator.clipboard.writeText(window.location.href)
+      .then(() => alert('Link skopiowany do schowka!'))
+      .catch(() => alert('Nie udało się skopiować linku'));
+  }
+}
+</script>
+
+
+</body></html>

@@ -1,0 +1,69 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link href="default.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="Author" content="Paweł Bodziacki pawel.bodziacki@gmail.com">
+<meta name="reply-to" content="pawel.bodziacki@gmail.com">
+<meta name="Generator" content="z palca">
+</head>
+<body>
+Nie wiesz<br>
+Czy światło białe jest czarne<br>
+Nie wiesz<br>
+czy miłość obca jest lepsza<br>
+Nie wiesz<br>
+czy spotkasz kogoś<br>
+w swym życiu<br>
+Nie wiesz<br>
+wciąż nie wiesz<br>
+czy będzie<br>
+to życie<br>
+<br>
+Wiesz jedno<br>
+Żeś sam<br>
+wśród ludzi<br>
+obrał drogę Syzyfa<br>
+współczesny don Kichot<br>
+we fraku<br>
+<br>
+Nie wiesz<br>
+co będzie w przyszłości<br>
+Nie wiesz<br>
+i uginasz swe serce<br>
+pod ciężarem przyszłości<br>
+Wciąż nie wiesz<br>
+Nie będziesz wiedział<br>
+Nie dowiesz się nigdy<br>
+Gdyż <br>
+jesteś<br>
+byłeś<br>
+będziesz<br>
+s a m<br><br><br>
+<span class="stopka">24.07.1987, 23:53</span><br>
+<p style="text-align: left; margin-top: 2em;">
+  <a href="#" onclick="shareLink()">
+    <img src="../obrazki/share-icon.png" alt="Udostępnij" class="share-icon" alt="Udostępnij"">
+  </a>
+</p>
+
+<script>
+function shareLink() {
+  if (navigator.share) {
+    navigator.share({
+      title: document.title,
+      url: window.location.href
+    }).catch((err) => console.log('Błąd udostępniania:', err));
+  } else {
+    navigator.clipboard.writeText(window.location.href)
+      .then(() => alert('Link skopiowany do schowka!'))
+      .catch(() => alert('Nie udało się skopiować linku'));
+  }
+}
+</script>
+
+
+</body>
+</html>
