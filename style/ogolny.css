@@ -1,0 +1,119 @@
+/* Ogólne ustawienia */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /*font-family: "Merriweather", serif;*/
+  font-family: verdana,arial,helvetica;
+  background: linear-gradient(135deg, #00FF00, #ffffff); 
+/*  background: linear-gradient(135deg, #a8edea, #fed6e3);*/
+  color: #222;
+}
+
+/* Kontener wrapper do centrowania */
+.content-wrapper {
+  flex: 1; /* zajmuje całą przestrzeń między górą a stopką */
+  display: flex;
+  justify-content: center; /* pionowe centrowanie */
+  align-items: center;     /* poziome centrowanie */
+  text-align: center;
+}
+
+.content {
+  flex: 1; /* zajmuje całą przestrzeń między górą a stopką */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* pionowe centrowanie */
+  align-items: center;     /* poziome centrowanie */
+  text-align: center;
+  padding: 2rem;           /* odrobina marginesu od góry/dół */
+}
+
+/* Nagłówek */
+h1 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+}
+
+/* Przyciski "za mgłą" */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.button {
+  position: relative;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.8rem 2rem;
+  text-decoration: none;
+  color: #222;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+/* Pseudo-element do subtelnego migotania / rozświetlenia */
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.3), transparent 70%);
+  opacity: 0.15;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+/* Hover — rozświetlenie i lekka animacja mgiełki */
+.button:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+.button:hover::before {
+  opacity: 0.3;
+  transform: scale(1.2);
+}
+
+/* Animacja wejścia */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Pozioma kreska */
+hr {
+  border: none;
+  height: 2px;
+  background: rgba(0,0,0,0.2);
+  width: 50%;
+  margin: 1.5em 0;
+}
+
+/* Stopka (tylko na stronie głównej) */
+footer {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+
+/*
+body, button, a, h1, h2, h3, p, footer {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+*/

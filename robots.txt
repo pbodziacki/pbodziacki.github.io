@@ -1,0 +1,16 @@
+# Blokada wszystkich robotów
+User-agent: *
+Disallow: /
+
+# Dodatkowo blokada popularnych AI botów
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Bingbot
+Disallow: /
+
+User-agent: OpenAI
+Disallow: /
+
+User-agent: Googlebot-Image
+Disallow: /
