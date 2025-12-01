@@ -1,0 +1,7 @@
+BODY {font-family: verdana,arial,helvetica; color: #000000; text-decoration: none; background-color: #FFFFFF; font-size: 0.9em;}
+a:link    { font-family: verdana,arial,helvetica; color: blue; text-decoration: none;  font-size: 8pt ;font-weight: bold;}
+a:visited { font-family: verdana,arial,helvetica; color: blue; text-decoration: none ; font-size: 8pt; font-weight: bold;}
+a:active  { font-family: verdana,arial,helvetica; color: blue; text-decoration: none ; font-size: 8pt;font-weight:  bold;}
+a:hover   { font-family: verdana,arial,helvetica; color: red; text-decoration: underline ; font-size: 8pt; font-weight: bold;}
+TABLE   { font-family: verdana,arial,helvetica; color: #FFFFFF; text-decoration: bold;  font-size: 8pt;}
+LI { font-family: verdana,arial,helvetica; color: #FFFFFF; text-decoration: bold;  font-size: 8pt;}

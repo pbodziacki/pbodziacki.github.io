@@ -1,0 +1,44 @@
+BODY {font-family: verdana,arial,helvetica; color: #000000; text-decoration: none; background-color: #FFFFFF; font-size: 0.9em; margin: 20px;line-height:1.4;
+white-space: nowrap;   /* blokuje zawijanie linii */
+    overflow-x: visible;   /* pozwala tekstowi wychodzić poza ekran poziomo */
+}
+a:link    { font-family: verdana,arial,helvetica; color: blue; text-decoration: none;  font-size: 8pt ;font-weight: bold;}
+a:visited { font-family: verdana,arial,helvetica; color: blue; text-decoration: none ; font-size: 8pt; font-weight: bold;}
+a:active  { font-family: verdana,arial,helvetica; color: blue; text-decoration: none ; font-size: 8pt;font-weight:  bold;}
+a:hover   { font-family: verdana,arial,helvetica; color: red; text-decoration: underline ; font-size: 8pt; font-weight: bold;}
+TABLE   { font-family: verdana,arial,helvetica; color: #FFFFFF; text-decoration: bold;  font-size: 8pt;}
+LI { font-family: verdana,arial,helvetica; color: #FFFFFF; text-decoration: bold;  font-size: 1em;}
+span.stopka {
+  font-size: smaller;
+  color: #999;
+  font-family: "Georgia", serif;
+  font-style: italic;
+}
+
+/* ======= Mobilne ekrany ======= */
+@media (max-width: 767px) {
+.stopka {
+        display: none;
+    }
+    BODY {
+        font-size: 1.1em;   /* większa czcionka na telefonach */
+        margin: 10px;       /* nieco mniejszy margines */
+    }
+}
+
+.share-icon {
+/*    width: 24px;         
+    height: 24px;*/
+    opacity: 0.7;        /* lekka przezroczystość */
+    transition: opacity 0.3s, transform 0.2s;
+    cursor: pointer;
+}
+
+.share-icon:hover {
+    opacity: 1;           /* pełna widoczność przy najechaniu */
+    transform: scale(1.1); /* lekko powiększenie */
+}
+
+.share-icon:active {
+    transform: scale(0.95); /* efekt wciskania */
+}

@@ -1,0 +1,50 @@
+<html>
+<head>
+<link href="default.css" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="Author" content="Paweł Bodziacki pawel.bodziacki@gmail.com">
+<meta name="reply-to" content="pawel.bodziacki@gmail.com">
+<meta name="Generator" content="z palca">
+</head>
+<body>
+waszymi grzechami<br>
+kaleczę stopy<br>
+wspinając się<br>
+wasza pycha <br>
+przygniata me plecy <br>
+do ziemi<br>
+twardym drzewcem krzyża<br>
+łzy spod cierni<br>
+korony<br>
+zbawią was<br>
+tylko muszę <br>
+tam<br>
+dotrzeć<br>
+i<br>
+umrzeć<br><br><br>
+<span class="stopka">marzec 2015</span>
+<p style="text-align: left; margin-top: 2em;">
+  <a href="#" onclick="shareLink()">
+    <img src="../obrazki/share-icon.png" alt="Udostępnij" class="share-icon" alt="Udostępnij"">
+  </a>
+</p>
+
+<script>
+function shareLink() {
+  if (navigator.share) {
+    navigator.share({
+      title: document.title,
+      url: window.location.href
+    }).catch((err) => console.log('Błąd udostępniania:', err));
+  } else {
+    navigator.clipboard.writeText(window.location.href)
+      .then(() => alert('Link skopiowany do schowka!'))
+      .catch(() => alert('Nie udało się skopiować linku'));
+  }
+}
+</script>
+
+
+</body></html>

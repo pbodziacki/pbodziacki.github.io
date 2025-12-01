@@ -1,0 +1,58 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link href="default.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="Author" content="Paweł Bodziacki pawel.bodziacki@gmail.com">
+<meta name="reply-to" content="pawel.bodziacki@gmail.com">
+<meta name="Generator" content="z palca">
+</head>
+<body>
+<b>Modlitwa</b><br><br><br>
+Kim jesteś,<br>
+że tak plączesz drogi życia ludziom?<br><br>
+Popatrz<br>
+co się stało:<br>
+miłość wsiąkła w granit<br>
+miłość była sercem<br>
+miłość jest -<br>
+czekaniem<br><br>
+Popatrz<br>
+co się stało:<br>
+jesień przyszła<br>
+jesień<br>
+jesień granitowa<br>
+jesień beznadziei<br><br>
+Czy wiesz<br>
+co się stanie?<br>
+Będzie granit tylko<br>
+i jesień jak z granitu<br>
+i ktoś, kto żyć<br>
+jak kochać<br>
+tak jak miłość<br>
+będzie<br><br>
+<p style="text-align: left; margin-top: 2em;">
+  <a href="#" onclick="shareLink()">
+    <img src="../obrazki/share-icon.png" alt="Udostępnij" class="share-icon" alt="Udostępnij"">
+  </a>
+</p>
+
+<script>
+function shareLink() {
+  if (navigator.share) {
+    navigator.share({
+      title: document.title,
+      url: window.location.href
+    }).catch((err) => console.log('Błąd udostępniania:', err));
+  } else {
+    navigator.clipboard.writeText(window.location.href)
+      .then(() => alert('Link skopiowany do schowka!'))
+      .catch(() => alert('Nie udało się skopiować linku'));
+  }
+}
+</script>
+
+
+</body>
+</html>

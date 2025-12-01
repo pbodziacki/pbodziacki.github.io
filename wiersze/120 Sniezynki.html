@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link href="default.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="Author" content="Paweł Bodziacki pawel.bodziacki@gmail.com">
+<meta name="reply-to" content="pawel.bodziacki@gmail.com">
+<meta name="Generator" content="z palca">
+<style>body {white-space: normal;}</style>
+</head>
+<body>
+<b>Śnieżynki</b><br><br><br>
+&nbsp;&nbsp;Chwile przesuwały się jak klatki w filmie - jedna po drugiej, takie same i wciąż te same. Powoli, krok za krokiem wchodził w następną rzeczywistość, jakby nie był czuły na upływ czasu - sam kreował świat, w którym się znalazł. Każda następna klatka, zrazu świeża i zielona od życia, martwiała, gdy na nią nastąpił. Tak posuwał się naprzód, nie zważając na ślady, które po sobie zostawił.<br>
+&nbsp;&nbsp;- Och! - krzyknęła kobieta. Stała na przystanku, czekając na autobus. Lada chwila miał nadjechać, gdy minął ją ten człowiek. Nie wiadomo skąd, zaczął padać śnieg. Jakby nagle powietrze zamarzło, wilgoć skrystalizowała się w mgnieniu oka i opadać zaczęła dużymi, puchatymi płatkami, początkowo powoli, coraz szybciej, aż do mokrych śladów na powierzchni ziemi.<br>
+&nbsp;&nbsp;Przeszedł mimo, nie oglądając się. Nie zwracał na nikogo uwagi - zresztą - nikt nie zwracał na niego uwagi. Kiedyś tego potrzebował, ale nie teraz. W swojej zgorzkniałej dobroduszności tylko dawał, nie chcąc nic w zamian. Niech mają - śnieżynki...<br><br>
+<p style="text-align: left; margin-top: 2em;">
+  <a href="#" onclick="shareLink()">
+    <img src="../obrazki/share-icon.png" alt="Udostępnij" class="share-icon" alt="Udostępnij"">
+  </a>
+</p>
+
+<script>
+function shareLink() {
+  if (navigator.share) {
+    navigator.share({
+      title: document.title,
+      url: window.location.href
+    }).catch((err) => console.log('Błąd udostępniania:', err));
+  } else {
+    navigator.clipboard.writeText(window.location.href)
+      .then(() => alert('Link skopiowany do schowka!'))
+      .catch(() => alert('Nie udało się skopiować linku'));
+  }
+}
+</script>
+
+
+</body></html>

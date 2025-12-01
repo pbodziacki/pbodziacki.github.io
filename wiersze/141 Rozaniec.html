@@ -1,0 +1,46 @@
+<html>
+<head>
+<link href="default.css" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="Author" content="Paweł Bodziacki pawel.bodziacki@gmail.com">
+<meta name="reply-to" content="pawel.bodziacki@gmail.com">
+<meta name="Generator" content="z palca">
+</head>
+<body>
+przykładam głowę do poduszki<br>
+i liczę spadające ziarenka piasku<br>
+w mojej klepsydrze życia<br>
+ogniwa różańca przesuwają się w pomarszczonych palcach<br>
+grzechoczą niczym kości rozsypującego się świata<br>
+słowa modlitwy nic nie znaczą<br>
+w suchym świszczącym oddechu<br>
+koralik za koralikiem<br>
+ziarnko po ziarnku<br>
+coraz bardziej nie jestem<br>
+w twoich myślach<br><br><br>
+<span class="stopka">czerwiec 2025</span>
+<p style="text-align: left; margin-top: 2em;">
+  <a href="#" onclick="shareLink()">
+    <img src="../obrazki/share-icon.png" alt="Udostępnij" class="share-icon" alt="Udostępnij"">
+  </a>
+</p>
+
+<script>
+function shareLink() {
+  if (navigator.share) {
+    navigator.share({
+      title: document.title,
+      url: window.location.href
+    }).catch((err) => console.log('Błąd udostępniania:', err));
+  } else {
+    navigator.clipboard.writeText(window.location.href)
+      .then(() => alert('Link skopiowany do schowka!'))
+      .catch(() => alert('Nie udało się skopiować linku'));
+  }
+}
+</script>
+
+
+</body></html>

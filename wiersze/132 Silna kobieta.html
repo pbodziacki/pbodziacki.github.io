@@ -1,0 +1,46 @@
+<html>
+<head>
+<link href="default.css" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="Author" content="Paweł Bodziacki pawel.bodziacki@gmail.com">
+<meta name="reply-to" content="pawel.bodziacki@gmail.com">
+<meta name="Generator" content="z palca">
+</head>
+<body>
+Spotkałem ją w parku nocą<br>
+był wielki księżyc<br>
+Szła prosto przed siebie<br>
+wokół migotały lęki i strachy<br>
+Bały się dotknąć duszy<br>
+zatrzaśniętej w pancernym orzeszku<br>
+silnej kobiety<br><br>
+Trafiło mnie jej spojrzenie<br>
+Nie mogłem się zasłonić<br>
+choć miałem do dyspozycji<br>
+wszystkie przeciwciała przeżytego życia<br><br>
+<br><span class="stopka">lipiec 2023</span>
+<p style="text-align: left; margin-top: 2em;">
+  <a href="#" onclick="shareLink()">
+    <img src="../obrazki/share-icon.png" alt="Udostępnij" class="share-icon" alt="Udostępnij"">
+  </a>
+</p>
+
+<script>
+function shareLink() {
+  if (navigator.share) {
+    navigator.share({
+      title: document.title,
+      url: window.location.href
+    }).catch((err) => console.log('Błąd udostępniania:', err));
+  } else {
+    navigator.clipboard.writeText(window.location.href)
+      .then(() => alert('Link skopiowany do schowka!'))
+      .catch(() => alert('Nie udało się skopiować linku'));
+  }
+}
+</script>
+
+
+</body></html>

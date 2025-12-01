@@ -1,0 +1,83 @@
+/* ======= Mobile Styles ======= */
+
+/* Ukryj domyślne marginesy i padding */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: verdana, arial, helvetica;
+    font-size: 1.1em; /* większa czcionka dla lepszej czytelności */
+    line-height: 1.5em;
+    background-color: #ffffff;
+    color: #000;
+    overflow-x: hidden; /* blokuje przewijanie poziome całego body */
+}
+
+/* Styl listy wierszy jako prostokątne przyciski */
+#lista-wierszy {
+    padding: 0;
+    margin: 0;
+}
+
+#lista-wierszy li {
+    list-style: none;
+    margin: 0.5em 0;
+}
+
+#lista-wierszy li a {
+    display: block;
+    padding: 0.5em 1em;
+    background-color: #d0d0d0;  /* jasnoszare tło */
+    color: #000;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1em;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* delikatny cień */
+    border: 1px solid #ccc; /* ramka widoczna zawsze */
+    box-sizing: border-box;  /* żeby padding nie „rozsadzał” */
+}
+
+/* Efekt kliknięcia / hover */
+#lista-wierszy li a:active,
+#lista-wierszy li a:hover {
+    background-color: #b0b0b0;
+    transform: scale(0.98);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+/* Wyróżnienie przy szukaniu */
+.highlight {
+    background-color: #ffd700;
+    font-weight: bold;
+}
+
+/* Nagłówki wierszy i paragrafy w treści */
+h1, h2, h3, p {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+    overflow-wrap: normal; /* linijki wychodzą poza ekran */
+}
+
+/* Stopka na dole strony */
+footer {
+    font-size: 0.9em;
+    color: #555;
+    padding: 1em;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    #lista-wierszy li a {
+        display: block;              /* nadal blokowo, jeden pod drugim */
+        padding: 0.4em 0.8em;        /* mniejszy padding niż w wersji mobilnej */
+        background-color: #d0d0d0;  /* tło zostaje */
+        /*color: blue;*/
+        border-radius: 5px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+        border: 1px solid #ccc;
+    }
+    #lista-wierszy li {
+        margin: 0.3em 0;             /* małe odstępy między elementami */
+        list-style: none;
+    }
+}

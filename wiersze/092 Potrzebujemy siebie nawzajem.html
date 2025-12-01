@@ -1,0 +1,52 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link href="default.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="Author" content="Paweł Bodziacki pawel.bodziacki@gmail.com">
+<meta name="reply-to" content="pawel.bodziacki@gmail.com">
+<meta name="Generator" content="z palca">
+</head>
+<body>
+<b>Do E***</b><br><br><br>
+Potrzebujemy siebie nawzajem?<br>
+Zapytałem swojego cienia<br>
+padającego na ścianę<br>
+Cień zadrżał<br>
+Usłyszał mój oddech<br>
+od którego pragnę uciec jak<br>
+najdalej<br>
+Zakołysał się<br>
+Czy potrzebujemy siebie nawzajem?<br>
+<br>
+Ból powoli ustępuje<br>
+Siedzę sobie w mym kącie<br>
+I patrzę przed siebie<br>
+Ból ustąpi<br>
+ale co będzie zamiast niego?...<br><br><br>
+<span class="stopka">29.05.1994, 7:57</span>
+<p style="text-align: left; margin-top: 2em;">
+  <a href="#" onclick="shareLink()">
+    <img src="../obrazki/share-icon.png" alt="Udostępnij" class="share-icon" alt="Udostępnij"">
+  </a>
+</p>
+
+<script>
+function shareLink() {
+  if (navigator.share) {
+    navigator.share({
+      title: document.title,
+      url: window.location.href
+    }).catch((err) => console.log('Błąd udostępniania:', err));
+  } else {
+    navigator.clipboard.writeText(window.location.href)
+      .then(() => alert('Link skopiowany do schowka!'))
+      .catch(() => alert('Nie udało się skopiować linku'));
+  }
+}
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+<head>
+<link href="default.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="Author" content="Paweł Bodziacki pawel.bodziacki@gmail.com">
+<meta name="reply-to" content="pawel.bodziacki@gmail.com">
+<meta name="Generator" content="z palca">
+</head>
+<body>
+końca świata się nie boję<br>
+bo koniec już był<br>
+osmaliły mnie jego płomienie<br>
+wypaliły do milczącej kości<br>
+od dawna skamieniałe serce<br>
+nie czeka zmiany <br>
+choć czasem twój gest<br>
+przez przypadek czuły...<br><br><br>
+<span class="stopka">listopad 2025</span>
+
+<p style="text-align: left; margin-top: 2em;">
+  <a href="#" onclick="shareLink()">
+    <img src="../obrazki/share-icon.png" alt="Udostępnij" class="share-icon" alt="Udostępnij"">
+  </a>
+<img src="../obrazki/voice.png" alt="Odtwórz wiersz" style="cursor:pointer;" onclick="new Audio('mp3/145_konca_swiata_sie_nie_boje.mp3').play();">
+</p>
+
+<script>
+function shareLink() {
+  if (navigator.share) {
+    navigator.share({
+      title: document.title,
+      url: window.location.href
+    }).catch((err) => console.log('Błąd udostępniania:', err));
+  } else {
+    navigator.clipboard.writeText(window.location.href)
+      .then(() => alert('Link skopiowany do schowka!'))
+      .catch(() => alert('Nie udało się skopiować linku'));
+  }
+}
+</script>
+
+</body></html>

@@ -1,0 +1,64 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link href="default.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="Author" content="Paweł Bodziacki pawel.bodziacki@gmail.com">
+<meta name="reply-to" content="pawel.bodziacki@gmail.com">
+<meta name="Generator" content="z palca">
+</head>
+<body>
+<b>Wojownik</b><br><br><br>
+Więc oto stanąłeś, dotarłeś do brzegu<br>
+zostawiwszy za sobą wszystkie mosty -<br>
+w opłakanym stanie<br>
+Rozpostarłeś ramiona szeroko przed sobą<br>
+chwytając powietrze, rozrzucając dłonie<br>
+Każdy twój oddech to było cierpienie<br>
+Każdy twój gest niósł śmierć i znużenie<br>
+Każdy czuły dotyk kończył czyjeś słowa<br>
+Miałeś jeden sen, śniony wciąż od nowa<br>
+<br>
+Więc stoisz sobie na brzegu<br>
+patrzysz prosto w słońce<br>
+zmrużone oczy utkwione w czyjeś serce drżące<br>
+nie mogą dopatrzyć się kresu twej drogi<br>
+Przecież wreszcie dotarłeś do niego<br>
+przecież...<br>
+Spojrzałeś pod nogi szukając potwierdzenia<br>
+myśli i uczucia...<br>
+<br>
+Miecz ci się już stępił od pracy w tym życiu<br>
+Wiele głów nim ściąłeś, wiele nici tętniących<br>
+przerwałeś<br>
+Choć w ukryciu wciąż szukasz wybaczenia czynu<br>
+Może spotkasz to wreszcie<br>
+<br>
+Ach, prawda! koniec drogi<br>
+synu...<br><br><br>
+<span class="stopka">14.12.1994, 3:24</span>
+<p style="text-align: left; margin-top: 2em;">
+  <a href="#" onclick="shareLink()">
+    <img src="../obrazki/share-icon.png" alt="Udostępnij" class="share-icon" alt="Udostępnij"">
+  </a>
+</p>
+
+<script>
+function shareLink() {
+  if (navigator.share) {
+    navigator.share({
+      title: document.title,
+      url: window.location.href
+    }).catch((err) => console.log('Błąd udostępniania:', err));
+  } else {
+    navigator.clipboard.writeText(window.location.href)
+      .then(() => alert('Link skopiowany do schowka!'))
+      .catch(() => alert('Nie udało się skopiować linku'));
+  }
+}
+</script>
+
+
+</body>
+</html>
