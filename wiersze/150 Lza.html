@@ -25,10 +25,8 @@ gdy spadnie mi wprost na serce<br>
   <a href="#" onclick="shareLink()">
     <img src="../obrazki/share-icon.png" alt="Udostępnij" class="share-icon" alt="Udostępnij"">
   </a>
-<img src="../obrazki/voice.png"
-     alt="Odtwórz"
-     style="cursor:pointer;"
-     onclick="new Audio('https://docs.google.com/uc?export=download&id=1JwoD6-9Trq4c7Z_7H0_3WW9xg0vRbnD0').play();">
+<audio id="audio1" src="mp3/150 Lza.ogg"></audio>
+<img src="../obrazki/voice.png" alt="Odtwórz wiersz" style="cursor:pointer;" onclick="document.getElementById('audio1').play();">
 </p>
 
 <!--<audio controls src="mp3/test.mp3"></audio>-->
@@ -47,5 +45,6 @@ function shareLink() {
   }
 }
 </script>
+
 
 </body></html>
